@@ -12,7 +12,7 @@ use Generated\Shared\Transfer\ProductOfferTransfer;
 interface ProductOfferStockReaderInterface
 {
     /**
-     * @phpstan-return array<mixed>
+     * @phpstan-return array<string, mixed>
      *
      * @param \Generated\Shared\Transfer\ProductOfferTransfer $productOfferTransfer
      *
