@@ -18,9 +18,6 @@ use Spryker\Zed\ProductOfferStockGui\ProductOfferStockGuiDependencyProvider;
  */
 class ProductOfferStockGuiCommunicationFactory extends AbstractCommunicationFactory
 {
-    /**
-     * @return \Spryker\Zed\ProductOfferStockGui\Communication\Reader\ProductOfferStock\ProductOfferStockReaderInterface
-     */
     public function createProductOfferStockReader(): ProductOfferStockReaderInterface
     {
         return new ProductOfferStockReader(
@@ -29,9 +26,6 @@ class ProductOfferStockGuiCommunicationFactory extends AbstractCommunicationFact
         );
     }
 
-    /**
-     * @return \Spryker\Zed\ProductOfferStockGui\Dependency\Facade\ProductOfferStockGuiToProductOfferStockFacadeInterface
-     */
     public function getProductOfferStockFacade(): ProductOfferStockGuiToProductOfferStockFacadeInterface
     {
         return $this->getProvidedDependency(ProductOfferStockGuiDependencyProvider::FACADE_PRODUCT_OFFER_STOCK);

@@ -26,11 +26,6 @@ class ProductOfferStockGuiDependencyProvider extends AbstractBundleDependencyPro
      */
     public const PLUGINS_PRODUCT_OFFER_STOCK_TABLE_EXPANDER = 'PLUGINS_PRODUCT_OFFER_STOCK_TABLE_EXPANDER';
 
-    /**
-     * @param \Spryker\Zed\Kernel\Container $container
-     *
-     * @return \Spryker\Zed\Kernel\Container
-     */
     public function provideCommunicationLayerDependencies(Container $container): Container
     {
         $container = parent::provideCommunicationLayerDependencies($container);
@@ -41,11 +36,6 @@ class ProductOfferStockGuiDependencyProvider extends AbstractBundleDependencyPro
         return $container;
     }
 
-    /**
-     * @param \Spryker\Zed\Kernel\Container $container
-     *
-     * @return \Spryker\Zed\Kernel\Container
-     */
     protected function addProductOfferStockFacade(Container $container): Container
     {
         $container->set(static::FACADE_PRODUCT_OFFER_STOCK, function (Container $container) {
@@ -57,11 +47,6 @@ class ProductOfferStockGuiDependencyProvider extends AbstractBundleDependencyPro
         return $container;
     }
 
-    /**
-     * @param \Spryker\Zed\Kernel\Container $container
-     *
-     * @return \Spryker\Zed\Kernel\Container
-     */
     protected function addProductOfferStockTableExpanderPlugins(Container $container): Container
     {
         $container->set(static::PLUGINS_PRODUCT_OFFER_STOCK_TABLE_EXPANDER, function () {
